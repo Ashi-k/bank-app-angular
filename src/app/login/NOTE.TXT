@@ -1,0 +1,135 @@
+life-cycle of angular componenet
+.................................
+constructor --> ngOnInit --> other methods
+
+Data Bindinding Techniques in angular (data sharing in componenet)
+.....................................
+
+html -- view
+ts - componenet
+
+1. one way Binding 
+......................
+1.1- component to view data sharing
+ 
+    1.1.1. string interpollation {{}}
+    1.1.2 property binding   [property]=""
+
+ 1.2- view to component data sharing
+`
+  1.2.1 event bindinng {event}="method()"  
+  1.2.2 event bindind using sevent  
+  1.2.3 3v3nt binding with template rendering variable #variable
+
+
+2.  two way binding 
+....................
+2.1 ngModel [(ngModel)]= "property" -- FormsModule
+
+
+redirection in angular
+......................
+Module - AppRoutingModule
+Router - A class used to redirect
+methods -NavigateByUrl 
+
+Dependency Injection
+...................
+to share datas from one class to another
+
+inside constructor
+
+       access_specifier reference:ClassName
+       private/public
+
+
+       reference.method()
+
+Angular Services
+................
+
+to store datas and methods
+-all the components can access the datas defined in service file easily
+
+         -ng g s service_name
+
+
+
+ Angular Dierectives - TO manipulate DOM 
+ .......................................
+ 1.component Dierectives
+ 2.structural Dierectives *ng for *ngif
+ 3.atribute directives    [ngclass]
+
+
+ Validation In Angular
+ ......................
+
+ 1.Template driven form
+ 2.model driven form
+        
+        2.1. reactive form -used to create model of form
+        reactive form contain -group,array,control
+
+                 -ReactiveFormsModule  - module
+                 -FormBuilder          - class used to create model form
+                 -group()              - method to create model
+
+
+    Local storage in Angular
+    .........................
+    LocalStorage.getitem()
+    localStorage.setItem()
+    localStorage.removeItem()
+
+    json -stringify parse
+
+    parent child components communication
+    .....................................
+
+    @input() parent to child data sharing
+    @output()  child to parent data sharing
+
+
+event creation in angular
+.........................
+
+we can create our own events in angular projects
+
+EventEmitter - class used to create undefined  events
+
+                 evenname =new EventEmitter()
+
+                 emit() - to define wowrkin / to start the event 
+
+
+API creationn in angiular
+..........................
+
+HttpClientModule -  module to create web api calls
+
+HttpClient   -  class inside the httpclientModule 
+
+folder file class methods
+
+package modules  class methods
+
+Asynchronus code handling in ts
+................................
+
+js - promise - resolve  then()
+             - reject    catch()
+
+ts - observable - resolve subscribe()
+                - reject catch
+
+
+Header generate for api request
+................................
+
+HttpHeader - class used to generate headers
+
+
+build project runninng
+.......................
+sudo npm i -g 

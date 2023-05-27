@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    background-image: url("https://i.postimg.cc/6pnF6kyk/photo-1511447333015-45b65e60f6d5.jpg");
+    background-size: cover;
+}
+
+.style{
+display: none;
+}

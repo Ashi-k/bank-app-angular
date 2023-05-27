@@ -1,0 +1,29 @@
+<div class="container w-50 rounded border-black text-center p-5 mt-5" style="background-color: rgba(56, 42, 165, 0.937); ">
+    <h1>Sign up to Bank</h1>
+    <form [formGroup]="registerForm" action="" >
+        <div class="p-3 mt-2">
+            <input formControlName="uname" id="uname" name="uname1" class="form-control" type="text" placeholder="Enter User Name">
+        </div>
+
+        <div *ngIf="this.registerForm.get('uname')?.errors && this.registerForm.get('uname')?.touched">
+            <p class="text-light bg-danger w-50 rounded ms-auto me-auto">accept only characters</p>
+        </div>
+
+        <div class="p-3 mt-2">
+            <input formControlName="acno" id="acno" name="acntno1" class="form-control" type="text" placeholder="Enter Account Number">
+        </div>
+        <div *ngIf="this.registerForm.get('acno')?.errors && this.registerForm.get('acno')?.touched">
+            <p class="text-light bg-danger w-50 rounded ms-auto me-auto">accept only numbers</p>
+         </div>
+        <div class="p-3 mt-2">
+            <input formControlName="psw" id="psw" name="paswrd1" class="form-control" type="password" placeholder="Password">
+        </div>
+        <div *ngIf="this.registerForm.get('psw')?.errors && this.registerForm.get('psw')?.touched">
+            <p class="text-light bg-danger w-50 rounded ms-auto me-auto">accept only numbers and characters </p>
+         </div>
+        <div class="p-3 mt-2">
+            <button type="submit" (click)="register()" class="btn btn-outline-light text-black">Signup</button>
+        </div>
+       
+    </form>
+</div>

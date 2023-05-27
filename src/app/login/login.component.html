@@ -1,0 +1,22 @@
+<h2 class=" ms-2 p-2 mt-2 text-light">{{data}}</h2>
+<div class="container w-50 rounded border-black text-center p-5 mt-5" style="background-color: rgba(56, 42, 165, 0.937);">
+    <h1>Sign In To Your Bank Account</h1>
+    <form action="" [formGroup]="loginForm">
+        <div class="p-3 mt-2">
+            <input formControlName="acno" name="acnt1" class="form-control" type="text" [placeholder]="inputplaceholder">
+        </div>
+        <div class="p-3 mt-2">
+            <input  formControlName="password" name="pswd1" class="form-control" type="password" placeholder="Password">
+        </div>
+        <div class="p-3 mt-2">
+            <button (click)="login()" type="submit" class="btn btn-outline-light text-black">Login</button>
+        </div>
+        <div class="text-center text-white">
+            <strong>Not Registerd yet  </strong>
+            <a style="text-decoration: none; color: rgb(14, 14, 15);" routerLink="register">
+            <strong>register</strong>
+            </a>
+
+        </div>
+    </form>
+</div>
